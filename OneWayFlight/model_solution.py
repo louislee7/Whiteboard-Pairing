@@ -3,7 +3,7 @@
 def reconstructTrip(tickets):
   # use an object to associate sources
   # and destinations
-  hash = {};
+  hash = {}
   route = [None]*(len(tickets) - 1)
 
   for ticket in tickets:
@@ -44,5 +44,5 @@ longerSet = [
   ['BHM', 'FLG'],
 ]
 
-print(reconstructTrip(shorterSet)); # should print [ 'PDX', 'DCA' ]
-print(reconstructTrip(longerSet));  # should print [ 'LAX', 'SFO', 'BHM', 'FLG', 'XNA', 'CID', 'SLC', 'PIT', 'ORD' ]
+print(reconstructTrip(shorterSet)) # should print [ 'PDX', 'DCA' ]
+print(reconstructTrip(longerSet))  # should print [ 'LAX', 'SFO', 'BHM', 'FLG', 'XNA', 'CID', 'SLC', 'PIT', 'ORD' ]
